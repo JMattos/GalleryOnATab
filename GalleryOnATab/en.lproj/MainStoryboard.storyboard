@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1906" systemVersion="11A511" targetRuntime="iOS.CocoaTouch" nextObjectID="28" propertyAccessControl="none" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2177" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
     <dependencies>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="902"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1173"/>
     </dependencies>
     <scenes>
+        <!--First View Controller - First-->
         <scene sceneID="11">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
@@ -21,10 +22,9 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" textAlignment="center" id="21">
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Loaded by the first view controller — an instance of FirstViewController — specified in the app delegate." textAlignment="center" id="21">
                                 <rect key="frame" x="20" y="181" width="280" height="88"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <string key="text">Loaded by the first view controller — an instance of FirstViewController — specified in the app delegate.</string>
                                 <fontDescription key="fontDescription" type="system" size="system"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textView>
@@ -34,8 +34,9 @@
                     <tabBarItem key="tabBarItem" title="First" image="first" id="7"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="653" y="-138"/>
+            <point key="canvasLocation" x="669" y="-452"/>
         </scene>
+        <!--Second View Controller - Second-->
         <scene sceneID="13">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
@@ -52,10 +53,9 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" textAlignment="center" id="23">
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Loaded by the second view controller — an instance of SecondViewController — specified in the app delegate." textAlignment="center" id="23">
                                 <rect key="frame" x="20" y="181" width="280" height="88"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <string key="text">Loaded by the second view controller — an instance of SecondViewController — specified in the app delegate.</string>
                                 <fontDescription key="fontDescription" type="system" size="system"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textView>
@@ -65,8 +65,41 @@
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="6"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="653" y="498"/>
+            <point key="canvasLocation" x="669" y="180"/>
         </scene>
+        <!--Navigation Controller - Gallery-->
+        <scene sceneID="XaA-Iw-D4p">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2qw-XX-0aV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="odB-QH-40K" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Gallery" image="first.png" id="iYq-l9-F3B"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="40Z-W8-JAw">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="80b-tt-Im1" kind="relationship" relationship="rootViewController" id="ZYt-DL-W0u"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="669" y="823"/>
+        </scene>
+        <!--Story BoardF Gallery View Controller - Gallery-->
+        <scene sceneID="gbf-zA-f8t">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tT3-Mj-GNL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="80b-tt-Im1" customClass="StoryBoardFGalleryViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PJ7-sU-JZZ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Gallery" image="first.png" id="il5-KI-0Di"/>
+                    <navigationItem key="navigationItem" title="Gallery" id="2t5-eT-RAL"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1199" y="823"/>
+        </scene>
+        <!--Tab Bar Controller-->
         <scene sceneID="15">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
@@ -80,6 +113,7 @@
                     <connections>
                         <segue destination="2" kind="relationship" relationship="viewControllers" id="26"/>
                         <segue destination="3" kind="relationship" relationship="viewControllers" id="27"/>
+                        <segue destination="odB-QH-40K" kind="relationship" relationship="viewControllers" id="24A-7w-UqW"/>
                     </connections>
                 </tabBarController>
             </objects>
@@ -88,8 +122,23 @@
     </scenes>
     <resources>
         <image name="first" width="16" height="16"/>
+        <image name="first.png" width="30" height="30"/>
         <image name="second" width="16" height="16"/>
     </resources>
+    <classes>
+        <class className="FGalleryViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FGalleryViewController.h"/>
+        </class>
+        <class className="FirstViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
+        </class>
+        <class className="SecondViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SecondViewController.h"/>
+        </class>
+        <class className="StoryBoardFGalleryViewController" superclassName="FGalleryViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StoryBoardFGalleryViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
