@@ -92,6 +92,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A81227FB14F4017700545C4C /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A81CB10114F180DC000C7383 /* photo-gallery-trashcan.png */,
+				A81CB10214F180DC000C7383 /* photo-gallery-right.png */,
+				A81CB10314F180DC000C7383 /* photo-gallery-left.png */,
+				A81CB10414F180DC000C7383 /* photo-gallery-edit-caption.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		A81CB0C814F1808D000C7383 = {
 			isa = PBXGroup;
 			children = (
@@ -156,10 +167,7 @@
 		A81CB10014F180CE000C7383 /* FGallery */ = {
 			isa = PBXGroup;
 			children = (
-				A81CB10114F180DC000C7383 /* photo-gallery-trashcan.png */,
-				A81CB10214F180DC000C7383 /* photo-gallery-right.png */,
-				A81CB10314F180DC000C7383 /* photo-gallery-left.png */,
-				A81CB10414F180DC000C7383 /* photo-gallery-edit-caption.png */,
+				A81227FB14F4017700545C4C /* images */,
 				A81CB10514F180DC000C7383 /* FGalleryPhoto.h */,
 				A81CB10614F180DC000C7383 /* FGalleryPhoto.m */,
 				A81CB10714F180DC000C7383 /* FGalleryPhotoView.h */,
@@ -386,6 +394,7 @@
 				A81CB0FE14F1808D000C7383 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

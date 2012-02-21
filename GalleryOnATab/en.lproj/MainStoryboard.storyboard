@@ -87,7 +87,7 @@
         <scene sceneID="gbf-zA-f8t">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tT3-Mj-GNL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="80b-tt-Im1" customClass="StoryBoardFGalleryViewController" sceneMemberID="viewController">
+                <viewController autoresizesArchivedViewToFullSize="NO" id="80b-tt-Im1" customClass="StoryBoardFGalleryViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PJ7-sU-JZZ">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -95,6 +95,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Gallery" image="first.png" id="il5-KI-0Di"/>
                     <navigationItem key="navigationItem" title="Gallery" id="2t5-eT-RAL"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1199" y="823"/>
